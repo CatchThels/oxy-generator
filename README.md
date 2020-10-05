@@ -65,7 +65,7 @@ python Generator.py --save
 | --save | Save all hits to oxylinks.txt file |
 | --onlyhits | Only, if you choose --max. Don't calc bads links. |
 | --max | Set max amount of generated links |
-| --names | Write file names to output. Ex: https://oxy.idk/d/228/ | testfile.exe |
+| --names | Write file names to output. Ex: https://oxy.idk/d/228/   testfile.exe |
 
 <br></br>
 
