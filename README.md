@@ -3,11 +3,11 @@
 <br></br>
 
 <h2 align="center"> Features of OxyGenerator: </h2>
-<br></br>
-- Custom configuration
-- Writing hits to file
-- Get file name in log
-- Crossplatform!
+
+* Custom configuration
+* Writing hits to file
+* Get file name in log
+* Crossplatform!
 
 <h2 align="center"> Installing </h2>
 
