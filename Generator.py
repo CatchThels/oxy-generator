@@ -4,6 +4,7 @@ save = False
 onlyhits = False
 wrong = 0
 hits = 0
+names = False
 
 import getpass
 
@@ -51,6 +52,8 @@ for arg in sys.argv:
 		save = True
 	if arg.__contains__("--onlyhits"):
 		onlyhits = True
+	if arg.__contains__("--names"):
+		names = True
 
 if max == 0 and onlyhits == True:
 	print(Fore.YELLOW + "Ignored parametrs: --onlyhits. Because max amount of links is unlimited." + Fore.RESET)
@@ -75,7 +78,11 @@ if int(max) == 0:
 				hits+=1
 				if save == True:
 					with open("oxylinks.txt", "a") as file:
-						file.write(link + "\n")
+						file.write(link)
+						if names == False:
+							file.write("\n")
+						else:
+							file.write(" | " + getFileName(title) + "\n")
 			i+=1
 		except AttributeError:
 			print(Fore.MAGENTA + "Locked\a" + Fore.RESET)
@@ -101,7 +108,11 @@ else:
 				hits+=1
 				if save == True:
 					with open("oxylinks.txt", "a") as file:
-						file.write(link + "\n")
+						file.write(link)
+						if names == False:
+							file.write("\n")
+						else:
+							file.write(" | " + getFileName(title) + "\n")
 		except AttributeError:
 			print(Fore.MAGENTA + "Locked\a" + Fore.RESET)
 			wrong+=1
