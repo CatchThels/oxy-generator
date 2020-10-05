@@ -9,7 +9,7 @@
 * Get file name in log
 * Crossplatform!
 
-<h2 align="center"> Installing </h2>
+<h2 align="center"> Installing: </h2>
 
 #### Linux/Android:
 
@@ -26,7 +26,7 @@ $ cd Downloads
 $ git clone https://github.com/CatchThels/oxy-generator/
 ```
 
-###### Install python dependencies;
+##### Install python dependencies;
 
 ```sh
 $ cd oxy-generator
@@ -34,7 +34,7 @@ $ pip3 install -r requirements.txt
 ```
 
 
-#### Windows
+#### Windows:
 
 ##### Download that repository by clicking Download button;
 
@@ -68,4 +68,4 @@ python Generator.py --save
 
 <br></br>
 
-<h1 align="center"> ~ With :heart: by katch.</h1>
+<h1 align="center"> ~ With :heart: by katch. ~</h1>
